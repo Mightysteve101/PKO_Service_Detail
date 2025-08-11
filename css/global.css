@@ -268,7 +268,7 @@ body {
   }
   #cs-navigation .cs-contact-wrapper,
   #cs-navigation .cs-tablet,
-  #cs-navigation .cs-button-border {
+  #cs-navigation .cs-button-6 {
     display: none;
   }
 }
@@ -340,7 +340,7 @@ body {
   }
   #cs-navigation .cs-nav-button {
     text-decoration: none;
-    margin-right: 2rem;
+    margin-right: 2rem; 
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -848,33 +848,61 @@ body {
 }
 /* Small Desktop - 1500px */
 @media only screen and (min-width: 1500px) {
-  #cs-navigation .cs-nav {
-    margin-right: auto;
-  }
-  #cs-navigation .cs-button-border {
-    font-size: 1rem;
-    line-height: 2.875rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 0 1.75rem;
-    color: var(--headerColor);
-    border: 1px solid var(--headerColor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-    transition: color 0.3s, background-color 0.3s;
-  }
-  #cs-navigation .cs-button-border:hover {
-    background-color: var(--headerColor);
-    color: #fff;
-  }
-  #cs-navigation .cs-button-border:hover .cs-icon {
-    filter: grayscale(1) brightness(1000%);
-  }
-  #cs-navigation .cs-button-border .cs-icon {
-    width: 1.25rem;
-  }
+    /************Button Design********************/
+    #cs-navigation .cs-button-6 {
+        text-align: center;
+        font-size: 1rem;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 8vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        min-width: 10.875rem;
+        margin: auto;
+        color: #fff;
+        padding: 0 0 0 1.5rem;
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
+        background-color: #1a1a1a;
+        display: inline-flex;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 1.5rem;
+        position: relative;
+        z-index: 1;
+        transition: color 0.3s;
+    }
+    #cs-navigation .cs-button-6 .cs-wrapper {
+        width: 2.75rem;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        position: relative;
+    }
+    #cs-navigation .cs-button-6 .cs-wrapper:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #f15a24;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 0;
+        transition: width 0.3s;
+        z-index: -1;
+    }
+    #cs-navigation .cs-button-6 .cs-icon {
+        width: 1.5rem;
+        height: auto;
+    }
+    #cs-navigation .cs-button-6:hover {
+        color: #fff;
+    }
+    #cs-navigation .cs-button-6:hover .cs-wrapper:before {
+        width: 0%;
+    }
 }
                                 
 

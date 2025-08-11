@@ -10,6 +10,7 @@
         padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
         position: relative;
         z-index: 10;
+        background-color: #f7f7f7;
     }
     #hero-1061 .cs-background {
         width: 100%;
@@ -86,42 +87,6 @@
         max-width: clamp(29rem, 60vw, 38.785rem);
         margin: 0 0 2.5rem 0;
         color: #fff;
-    }
-    #hero-1061 .cs-button-10 {
-        text-align: center;
-        font-size: 1rem;
-        /* 46px - 56px */
-        line-height: clamp(2.875rem, 8vw, 3.5rem);
-        text-decoration: none;
-        font-weight: 700;
-        min-width: 10.875rem;
-        margin: auto;
-        color: #fff;
-        padding: 0 2rem;
-        /* prevents padding and border from affecting height and width */
-        box-sizing: border-box;
-        background-color: #f15a24;
-        box-shadow: 4px 4px 0px 0px #1a1a1a;
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0.25rem;
-        position: relative;
-        z-index: 1;
-        transform: skew(-10deg);
-        transition:
-            background-color 0.3s,
-            box-shadow 0.3s;
-    }
-    #hero-1061 .cs-button-10 .cs-icon {
-        transition: transform 0.3s;
-    }
-    #hero-1061 .cs-button-10:hover {
-        background-color: #1a1a1a;
-        box-shadow: 4px 4px 0px 0px var(--primary);
-    }
-    #hero-1061 .cs-button-10:hover .cs-icon {
-        transform: translateX(0.25rem);
     }
     #hero-1061 .cs-card-group {
         margin: 0;
@@ -225,7 +190,7 @@
 /* Large Desktop Parallax Effect - 100px */
 @media only screen and (min-width: 100rem) {
     #hero-1061 .cs-background {
-        background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic.jpg");
+        background: url("../assets/img/hero_image_truck.jpg");
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
@@ -309,42 +274,6 @@
         display: block;
         /* prevents flexbox from squishing it */
         flex: none;
-    }
-    #sbsr-1162 .cs-button-10 {
-        text-align: center;
-        font-size: 1rem;
-        /* 46px - 56px */
-        line-height: clamp(2.875rem, 8vw, 3.5rem);
-        text-decoration: none;
-        font-weight: 700;
-        min-width: 10.875rem;
-        margin: auto;
-        color: #fff;
-        padding: 0 2rem;
-        /* prevents padding and border from affecting height and width */
-        box-sizing: border-box;
-        background-color: #f15a24;
-        box-shadow: 4px 4px 0px 0px #1a1a1a;
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0.25rem;
-        position: relative;
-        z-index: 1;
-        transform: skew(-10deg);
-        transition:
-            background-color 0.3s,
-            box-shadow 0.3s;
-    }
-    #sbsr-1162 .cs-button-10 .cs-icon {
-        transition: transform 0.3s;
-    }
-    #sbsr-1162 .cs-button-10:hover {
-        background-color: #1a1a1a;
-        box-shadow: 4px 4px 0px 0px var(--primary);
-    }
-    #sbsr-1162 .cs-button-10:hover .cs-icon {
-        transform: translateX(0.25rem);
     }
     #sbsr-1162 .cs-image-group {
         /* scales the whole group based on the view width size and stop when that vales equals .8em, resets at desktop */
@@ -876,16 +805,6 @@
         transition:
             background-color 0.3s,
             box-shadow 0.3s;
-    }
-    #reviews-65 .cs-button-10 .cs-icon {
-        transition: transform 0.3s;
-    }
-    #reviews-65 .cs-button-10:hover {
-        background-color: #1a1a1a;
-        box-shadow: 4px 4px 0px 0px var(--primary);
-    }
-    #reviews-65 .cs-button-10:hover .cs-icon {
-        transform: translateX(0.25rem);
     }
 }
 /* Tablet - 768px */

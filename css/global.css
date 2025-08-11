@@ -1,7 +1,7 @@
 :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #ED1C24; /*red*/
-    --secondary: #d0d0d0; /*Medium Grey*/
+    --primary: #d81a20; /*red*/
+    --secondary: #F3F3F3; /*Medium Grey*/
     --headerColor: #020100; /*Black*/
     --bodyTextColor: #020100; /*Black*/
     --bodyTextColorWhite: #fafbfc;
@@ -862,7 +862,7 @@ body {
         padding: 0 0 0 1.5rem;
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
-        background-color: #1a1a1a;
+        background-color: var(--primary);
         display: inline-flex;
         align-items: stretch;
         justify-content: space-between;
@@ -884,7 +884,7 @@ body {
         content: "";
         width: 100%;
         height: 100%;
-        background: #f15a24;
+        background: var(--secondary);
         opacity: 1;
         position: absolute;
         display: block;
@@ -896,6 +896,10 @@ body {
     #cs-navigation .cs-button-6 .cs-icon {
         width: 1.5rem;
         height: auto;
+        fill: black;
+    }
+    #cs-navigation .cs-button-6 .cs-icon:hover {
+        fill: #fff;
     }
     #cs-navigation .cs-button-6:hover {
         color: #fff;
@@ -1329,7 +1333,7 @@ body {
     padding: 0 0 0 1.5rem;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    background-color: #1a1a1a;
+    background-color: var(--primary);
     display: inline-flex;
     align-items: stretch;
     justify-content: space-between;
@@ -1351,7 +1355,7 @@ body {
     content: "";
     width: 100%;
     height: 100%;
-    background: #f15a24;
+    background: var(--secondary);
     opacity: 1;
     position: absolute;
     display: block;
@@ -1363,9 +1367,10 @@ body {
 .cs-button-6 .cs-icon {
     width: 1.5rem;
     height: auto;
+    fill: black;
 }
-.cs-button-6:hover {
-    color: #fff;
+.cs-button-6 .cs-icon:hover {
+    fill: #fff;
 }
 .cs-button-6:hover .cs-wrapper:before {
     width: 0%;

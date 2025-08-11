@@ -87,35 +87,41 @@
         margin: 0 0 2.5rem 0;
         color: #fff;
     }
-    #hero-1061 .cs-button-solid {
+    #hero-1061 .cs-button-10 {
+        text-align: center;
         font-size: 1rem;
         /* 46px - 56px */
-        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        line-height: clamp(2.875rem, 8vw, 3.5rem);
         text-decoration: none;
         font-weight: 700;
-        margin: 0;
+        min-width: 10.875rem;
+        margin: auto;
         color: #fff;
-        padding: 0 1.5rem;
-        background-color: var(--primary);
-        display: inline-block;
+        padding: 0 2rem;
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
+        background-color: #f15a24;
+        box-shadow: 4px 4px 0px 0px #1a1a1a;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.25rem;
         position: relative;
         z-index: 1;
+        transform: skew(-10deg);
+        transition:
+            background-color 0.3s,
+            box-shadow 0.3s;
     }
-    #hero-1061 .cs-button-solid:before {
-        content: "";
-        position: absolute;
-        display: block;
-        height: 100%;
-        width: 0%;
-        background: #000;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: width 0.3s;
+    #hero-1061 .cs-button-10 .cs-icon {
+        transition: transform 0.3s;
     }
-    #hero-1061 .cs-button-solid:hover:before {
-        width: 100%;
+    #hero-1061 .cs-button-10:hover {
+        background-color: #1a1a1a;
+        box-shadow: 4px 4px 0px 0px var(--primary);
+    }
+    #hero-1061 .cs-button-10:hover .cs-icon {
+        transform: translateX(0.25rem);
     }
     #hero-1061 .cs-card-group {
         margin: 0;
@@ -304,38 +310,41 @@
         /* prevents flexbox from squishing it */
         flex: none;
     }
-    #sbsr-1162 .cs-button-solid {
+    #sbsr-1162 .cs-button-10 {
+        text-align: center;
         font-size: 1rem;
         /* 46px - 56px */
-        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        line-height: clamp(2.875rem, 8vw, 3.5rem);
         text-decoration: none;
         font-weight: 700;
-        text-align: center;
-        margin: 0;
+        min-width: 10.875rem;
+        margin: auto;
         color: #fff;
-        min-width: 9.375rem;
-        padding: 0 1.5rem;
-        background-color: var(--primary);
-        display: inline-block;
+        padding: 0 2rem;
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
+        background-color: #f15a24;
+        box-shadow: 4px 4px 0px 0px #1a1a1a;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.25rem;
         position: relative;
         z-index: 1;
-        /* prevents padding from adding to the width */
-        box-sizing: border-box;
+        transform: skew(-10deg);
+        transition:
+            background-color 0.3s,
+            box-shadow 0.3s;
     }
-    #sbsr-1162 .cs-button-solid:before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 0%;
-        background: #000;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: width 0.3s;
+    #sbsr-1162 .cs-button-10 .cs-icon {
+        transition: transform 0.3s;
     }
-    #sbsr-1162 .cs-button-solid:hover:before {
-        width: 100%;
+    #sbsr-1162 .cs-button-10:hover {
+        background-color: #1a1a1a;
+        box-shadow: 4px 4px 0px 0px var(--primary);
+    }
+    #sbsr-1162 .cs-button-10:hover .cs-icon {
+        transform: translateX(0.25rem);
     }
     #sbsr-1162 .cs-image-group {
         /* scales the whole group based on the view width size and stop when that vales equals .8em, resets at desktop */
@@ -842,42 +851,41 @@
         margin: auto;
         color: var(--bodyTextColor);
     }
-    #reviews-65 .cs-button-solid {
+    #reviews-65 .cs-button-10 {
+        text-align: center;
         font-size: 1rem;
         /* 46px - 56px */
-        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        line-height: clamp(2.875rem, 8vw, 3.5rem);
         text-decoration: none;
         font-weight: 700;
-        text-align: center;
-        margin: 0;
-        color: var(--headerColor);
-        min-width: 9.375rem;
-        padding: 0 1.5rem;
-        background-color: var(--primary);
-        border-radius: 0.25rem;
-        display: inline-block;
+        min-width: 10.875rem;
+        margin: auto;
+        color: #fff;
+        padding: 0 2rem;
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
+        background-color: #f15a24;
+        box-shadow: 4px 4px 0px 0px #1a1a1a;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.25rem;
         position: relative;
         z-index: 1;
-        /* prevents padding from adding to the width */
-        box-sizing: border-box;
+        transform: skew(-10deg);
+        transition:
+            background-color 0.3s,
+            box-shadow 0.3s;
     }
-    #reviews-65 .cs-button-solid:before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 0%;
-        background: #000;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        border-radius: 0.25rem;
-        transition: width 0.3s;
-        color: var(--headerColor);
+    #reviews-65 .cs-button-10 .cs-icon {
+        transition: transform 0.3s;
     }
-    #reviews-65 .cs-button-solid:hover:before {
-        width: 100%;
-        color: white;
+    #reviews-65 .cs-button-10:hover {
+        background-color: #1a1a1a;
+        box-shadow: 4px 4px 0px 0px var(--primary);
+    }
+    #reviews-65 .cs-button-10:hover .cs-icon {
+        transform: translateX(0.25rem);
     }
 }
 /* Tablet - 768px */

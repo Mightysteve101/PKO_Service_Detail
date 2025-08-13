@@ -115,6 +115,7 @@
         justify-content: center;
         position: relative;
         z-index: 1;
+        border-radius: 1rem;
     }
     #hero-1061 .cs-icon-wrapper {
         width: 6.25rem;

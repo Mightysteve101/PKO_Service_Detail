@@ -273,7 +273,7 @@
         width: 0.5rem;
         height: 0.5rem;
         margin-top: 0.5rem;
-        background: var(--secondary);
+        background: var(--primary);
         display: block;
         /* prevents flexbox from squishing it */
         flex: none;

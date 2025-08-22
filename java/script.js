@@ -41,5 +41,6 @@ document.addEventListener("DOMContent",function(){
         } else {
         document.querySelector('#cs-navigation').classList.remove('scroll')
         }
-    });                             
+    });
+                                                           
 });
